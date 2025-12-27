@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Unbounded:wght@200..900&display=swap');
+
+/* Estilo para Desktop */
+
+*{ /* usamos * para aplicar essas propriedades a todos os itens do programa em html */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* essas configurações tiram todas as configurações que já vem pré-definidas no navegador */
+}
+h1{
+    font-size: 56px;
+    color: #F5F5F5;
+    font-family: "Unbounded", sans-serif;
+    margin-top: 60px;
+    margin-bottom: 24px;
+    text-align: center;
+}
+span{
+    color:#9747FF;
+}
+
+p{
+    font-size: 20px;
+    color: #F5F5F5;
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+    margin-top: 24px;
+    margin: 0 auto;
+    width: 792px;
+
+
+}
+body{
+    background-color: #0E1014;
+}
+.imagem_logo{
+    display: block;
+    width: 209.29px;
+    margin-top: 75px;
+    margin-left: 360px;
+    margin-right: 1350.71px;
+    padding: 30px;
+}
+
+.celulares{
+    display: block;
+    width: 792px;
+    height: 446px;
+    margin: 0 auto;
+}
+
+button{
+    font-family: "Poppins", sans-serif;
+    font-size: 24px;
+    color: #F5F5F5;
+    text-decoration: none;
+    width: 340px;
+    height: 66px;
+    border-radius: 36px;
+    background-color: #9747FF;
+    display: block;
+    text-align: center;
+    line-height: 66px;
+    border-style: none;
+    margin: 40px auto;
+ 
+    /* para centralizar o botão, podemos escrever detalhado como foi feito abaixo (mas temos uma problemática pq não estamos considerando o tamanho da tela, então essas medidas permanecerão fixas) ou podemos escrever tudo na mesma linha como foi descrito aqui na última linha (mas dessa forma acontece o mesmo problema). 
+    margin-top: 100px;
+    margin-right: 790px;
+    margin-bottom: 10px;
+    margin-left: 790px;   
+    margin: 100px 790px 10px 790px; */
+}
+
+button:hover{
+    background-color: #8233E8;
+}
+
+/* para alinhar elementos de bloco (botões, imagens, etc), devemos usar a propriedade margin */
+
+/* Estilo Tablet */
+@media(max-width: 768px){
+    .imagem_logo{
+        margin: 65px 0 0 60px;
+    }
+    h1{
+        width: 648px;
+        height: 158px;
+    }
+    p{
+        width: 648px;
+        height: 108px;
+        font-size: 24px;
+    }
+}
+
+/* Estilo Mobile */
+@media(max-width: 375px){
+    .imagem_logo{
+        margin-left: 17px;
+        margin-right: 17px;
+        margin-bottom: 43.39px;
+    }
+    h1{
+        font-size: 40px;
+        width: 341px;
+        height: 150px;
+    }
+    p{
+        font-size: 20px;
+        width: 341px;
+        height: 120px;
+    }
+    .celulares{
+        width: 341px;
+        height: 230.61px;
+        margin: 0 auto;
+        margin-top: 40px;
+    }
+    button{
+        width: 251px;
+        height: 66px;
+        font-size: 20px;
+    }
+}
